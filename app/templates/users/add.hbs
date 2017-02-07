@@ -1,0 +1,11 @@
+<form class="form-signin">
+        <h4 class="form-signin-heading">Add User</h4>
+        <label for="inputEmail" class="sr-only">First Name</label>
+        {{input type="textbox"  value=model.fname class="form-control" placeholder="First Name" required="" autofocus=""}}
+        <label for="inputEmail" class="sr-only">Last Name</label>
+        {{input type="textbox"  value=model.lname class="form-control" placeholder="Last Name" required="" autofocus=""}}
+        <label for="inputEmail" class="sr-only">Email address</label>
+        {{input type="email"  value=model.email class="form-control" placeholder="Email" required="" autofocus=""}}
+        <button class="btn btn-lg btn-primary btn-block" disabled={{model.isDisabled}} {{action 'submitContact' model}}>Submit</button>
+</form>
+

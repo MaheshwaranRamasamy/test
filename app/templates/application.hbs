@@ -1,0 +1,7 @@
+<div class="container">
+  {{partial 'navbar'}}
+  {{outlet}}
+</div>
+{{#if flashArray.length}}
+{{flash-msg flashMsgArray=flashArray}}
+{{/if}}
